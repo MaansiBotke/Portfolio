@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maansi Botke</title>
+    <link rel="icon" type="image/jpg" href="Images/M.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cd67487056.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/M.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li>
+              <a
+                href="resumelink"
+                >Resume</a
+              >
+            </li> --> 
+            <i class="fa-solid fa-xmark mobile-icon" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars mobile-icon" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <div class="header-text-left">
+            <h1 style="color: #b54769;">&lt;Coder&gt;</h1>
+            <pre>
+              <code id="code-output"></code><span class="cursor">|</span>
+            </pre>
+          </div>
+          <div class="header-text-right">
+            <p id="output-text" style="display: none; font-weight: bold; color: #FFE5BD;"></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!------------about-------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="Images/About.jpeg"
+              alt="About Image Mobile"
+              class="mobile-image"
+            />
+            <img
+              src="Images/About.jpeg"
+              alt="About Image Desktop"
+              class="desktop-image"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p style="text-align: justify">
+              I’m Maansi Botke, a software developer with over five years of hands-on experience turning ideas into seamless, 
+              high-performance solutions. I’m always eager to tackle new challenges, stay ahead of emerging tech trends, 
+              and create software that makes an impact. Whether it’s optimizing code or designing scalable systems, 
+              I’m driven by the belief that great software is the backbone of innovation.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('internship')">Internship</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming Languages</span><br />Python, Clojure, HIVE, HTML, CSS, SQL, C/C++, JavaScript, JAVA, Ruby, and GraphQL.</li>
+                <li>
+                  <span>AWS</span><br />Elastic MapReduce Cluster (EMR), Hive queries, and Hadoop Pipelines.
+                </li>
+                <li>
+                  <span>Tools</span><br />Git, Postman, Jupyter Notebook, Splunk, and Hue.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Oracle Cerner, Bangalore, India</span><br /> <i>Software Developer 2 (March 2024 - Present)</i>
+                  <ul class="exp">
+                     <li>Analyzing the codebase to improve code performance and efficiency.</li>
+                     <li>Identify and suggest effective solutions to defects within turnaround times.</li>
+                     <li>Implemented optimizations for over 15 spikes with 98% performance improvement in one of the tasks.</li>
+                  </ul>
+                  <br /> <i>Software Developer 1 - Senior Associate Software Engineer (May 2022 - February 2024)</i>
+                  <ul class="exp">
+                     <li>Handled over 190 support requests, addressing client concerns.</li>
+                     <li>Executed in-depth analyses of complex code issues and client data through Hive queries.</li>
+                     <li>Reviewed code changes as a technical and functional verifier.</li>
+                  </ul>
+                  <br /> <i>Software Developer 1 - Software Engineer (August 2020 - April 2022)</i>
+                  <ul class="exp">
+                     <li>Worked on over 130 JIRA tickets while developing automated healthcare algorithms for USA and UK hospital clients, using Clojure.</li>
+                     <li>Tested the algorithm through JVM-based unit testing.</li>
+                     <li>Evaluated code's impact through Hadoop Pipelines on client data using AWS infrastructure.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>B.Tech(IT), SRM Institute of Science and Technology, Chennai , 2016-20</span><br />89.05%
+                  
+                </li>
+                <li>
+                  <span>Higher Secondary Education, Navrachna School, Vadodara , 2015-16</span
+                  ><br />78%
+                </li>
+                <li>
+                  <span>Secondary Education, Kendriya Vidyalaya, Paradip Port, 2014-15</span
+                  ><br />95%
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="internship">
+              <ul>
+                <li>
+                  <span>Oracle Cerner, Bangalore, India</span><br /><i>Software Intern (January 2020 - July 2020)</i>
+                  <br />
+                  <ul class="intern">
+                    <li>Designed the architecture for an application to find vaccination centers in a city.</li>
+                    <li>Developed the backend using Ruby on Rails with API calls to the services.</li>
+                    <li>Created the front end utilizing the React library to provide an intuitive user interface.</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Indian Oil Corporation Ltd., Vadodara, India</span><br /><i>Software Intern (June 2018 - June 2018)</i>
+                  <br />
+                  <ul class="intern">
+                    <li>Built an intranet web portal for the Technical Services Department to manage various proposals and tenders.</li>
+                    <li>Created user interface using HTML and CSS.</li>
+                    <li>Developed backend through XAMPP, MySQL, and PHP.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------achievements----------->
+    <div id="achievements">
+      <div class="container">
+        <h1 class="sub-title">Awards</h1>
+        <div class="achievements-list">
+          <div>
+            <h3>Bravo Awards - Oracle Cerner (2022)</h3>
+            <br />
+            <p>
+              Received the Bravo Award consecutively in Quater 2 and Quater 3 for the development of Covid-19 algorithms.
+            </p>
+          </div>
+
+          <div>
+            <h3>Bravo Awards - Oracle Cerner (2021)</h3>
+            <br />
+            <p>
+              Won the Bravo Award in Q2 for excellence in the "Commit and Deliver" category.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------certifications----------->
+    <div id="certifications">
+      <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+          <div class="certifications-list">
+          <div> 
+          <ul>
+            <li>
+              <h3>Introduction to Data Science in Python, Coursera (March 2019)</h3>
+            </li>
+            <li>
+              <h3>Blockchain Basics, Coursera (May 2018)</h3>
+            </li>
+            <li>
+              <h3>Ethical Hacking, F1Network Security (June 2017)</h3>
+            </li>
+            <li>
+              <h3>Python, F1Network Security (June 2017)</h3>
+            </li>
+            <li>
+              <h3>C and C++ language, F1Network Security (July 2016)</h3>
+            </li>
+            <li>
+              <h3>Operating Systems, F1Network Security (July 2016)</h3>
+            </li>
+          </ul>
+          </div>
+          </div>
+      </div>
+    </div>        
+
+    <!---------------projects---------------->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/depression.png" />
+            <div class="layer">
+              <h3>MindLens</h3>
+              <p>
+                A machine learning algorithm for the early detection of depression using social media data. 
+                Evaluated various techniques including Support Vector Machine (SVM), 
+                Logistic Regression, Random Forest, TF-IDF, and Bag of Words to assess their accuracy.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/hand.png" />
+            <div class="layer">
+              <h3>GestureGenius</h3>
+              <p>
+                A real-time hand gesture recognition system for enhanced human-computer interaction, utilizing inbuilt 
+                web camera for image acquisition and OpenCV for feature extraction.
+              </p>
+            
+            </div>
+          </a>
+          </div>
+          <div class="work">
+            <img src="Images/insta.png" />
+            <a href="https://github.com/MaansiBotke/insta-clone.git">
+            <div class="layer">
+              <h3>Insta Clone</h3>
+              <p>
+                This Instagram clone app, built with the MERN stack, mimics the core features of the popular social media platform. 
+                Users can create accounts, post images, like and comment on posts, 
+                and follow other users. 
+              </p>
+            
+            </div>
+          </a>
+          </div>
+        </div>
+        <div class="hidden-projects">
+          <div class="work-list">
+            
+            <div class="work">
+              <img src="Images/recipe.png" />
+              <a href="https://github.com/MaansiBotke/recipe-app/tree/dev-app">
+              <div class="layer">
+                <h3>Recipe App</h3>
+                <p>
+                  This recipe search platform, built with ReactJS, allows users to easily discover and 
+                  explore a wide variety of recipes. The app’s real-time search functionality ensures a seamless and 
+                  interactive experience for cooking enthusiasts.
+                </p>
+                
+              </div>
+            </a>
+            </div>
+            <div class="work">
+              <img src="Images/covid.png" />
+              <a href="https://github.com/MaansiBotke/covid-tracker/tree/front-end">
+              <div class="layer">
+                <h3>Covid Tracker</h3>
+                <p>
+                    This COVID Tracker, built with ReactJS, provides real-time updates on global COVID-19 statistics. 
+                    Users can view the latest number of confirmed cases, recoveries, and deaths across countries.
+                </p>
+              </div>
+              </a>
+            </div>
+            <div class="work">
+                <img src="Images/blood.png" />
+                <div class="layer">
+                  <h3>Blood Bank Management System</h3>
+                  <p>
+                    Designed a database to manage and streamline the operations of a blood bank system using MySQL.
+                  </p>
+                
+                </div>
+              </a>
+              </div>
+          </div>
+          <div class="work-list">
+            <div class="work">
+              <img src="Images/weather.png" />
+              <div class="layer">
+                <h3>Weather App</h3>
+                <p>
+                    This weather app, built with React, provides real-time weather updates for any location. 
+                </p>
+                
+              </div>
+            </a>
+            </div>
+            <div class="work">
+                <img src="Images/blog.png" />
+                <a href="https://github.com/MaansiBotke/blog/tree/dev"
+                    >
+                <div class="layer">
+                  <h3>Blog</h3>
+                  <p>
+                    This blog website, designed using ReactJS, allows users to create, read, update, 
+                    and delete posts with ease. Featuring a simple and intuitive interface, 
+                    it provides a seamless experience for managing blog content
+                  </p>
+                
+                </div>
+              </a>
+              </div>
+              <div class="work">
+                <img src="Images/tic.png" />
+                <a href="https://github.com/MaansiBotke/React-Tic-Tac-Toe/tree/game">
+                <div class="layer">
+                  <h3>Tic-Tac-Toe</h3>
+                  <p>
+                    This simple yet engaging Tic Tac Toe game, built with ReactJS, offers a smooth 
+                    and interactive experience for players.
+                  </p>
+                  
+                </div>
+              </a>
+              </div>
+            
+          </div>
+        </div>
+        <div class="show-more">
+          <button id="showMoreBtn" class="btn">See More</button>
+        </div>
+      </div>
+    </div>
+
+    <!---------------Contact---------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-paper-plane"></i>
+              <a href="mailto:maansibotke@gmail.com" class="email-link"
+                >maansibotke@gmail.com</a
+              >
+            </p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/maansi-botke"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/maansi_botke?igsh=MW94Ymg1cml2ajYyNw%3D%3D&utm_source=qr"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://github.com/MaansiBotke"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+<!--             <a
+              href="resumelink"
+              class="btn btn2"
+              >Resume</a
+            > -->
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @Maansi.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Check if hidden projects are visible initially
+        if ($(".hidden-projects").is(":visible")) {
+          $("#showMoreBtn").text("Show Less");
+        } else {
+          $("#showMoreBtn").text("Show More");
+        }
+
+        $("#showMoreBtn").on("click", function () {
+          $(".hidden-projects").slideToggle();
+          $(this).text(function (i, text) {
+            return text === "Show More" ? "Show Less" : "Show More";
+          });
+        });
+      });
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx8QsBGVmCnk3bLK3oRuDTCV-JGSwCCXsTQL387J_2LI1cW6k-i5OXxU8NlVUdfZ5q3Ig/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
